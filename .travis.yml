@@ -6,6 +6,8 @@ addons:
     organization: "pengttyy-github"
     token:
       secure: ${sonarqube_token}
+    github_token:
+      secure: ${github_token}
 jdk:
   - oraclejdk8
 script:
