@@ -11,7 +11,7 @@ public class SpringBootHelloApplicationTests {
 
     @Test
     public void contextLoads() {
-        throw new NullPointerException("这是一个异常");
+
     }
 
 }
