@@ -24,6 +24,7 @@ public class SpringBootHelloApplication {
                 .apis(RequestHandlerSelectors.basePackage("com.pengttyy"))
                 .paths(PathSelectors.any())
                 .build();
+
     }
 
     private ApiInfo apiInfo() {
