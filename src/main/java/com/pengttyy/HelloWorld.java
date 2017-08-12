@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -52,6 +54,12 @@ public class HelloWorld {
         user.setName("pengttyy");
         user.setCode("ppppp");
         user.setAge(10);
+
+        List<User> list = new ArrayList<>();
+        User user1 = new User();
+        user1.setName("kai1");
+        list.add(user1);
+        user.setList(list);
 
         Result<User> userResult = new Result<>();
         userResult.setData(user);

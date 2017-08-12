@@ -29,7 +29,8 @@ public class SpringBootHelloApplicationTests {
         };
         ResponseEntity<Result<User>> exchange = restTemplate.exchange(requestEntity, resultTypeReference);
         Result<User> body = exchange.getBody();
-        System.out.println(body.getData().toString());
+
+        body.getData().getList().stream().forEach(t -> System.out.println(t.getName()));
 
     }
 

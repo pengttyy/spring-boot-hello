@@ -1,5 +1,7 @@
 package com.pengttyy.mapper.entity;
 
+import java.util.List;
+
 /**
  * Created by pengt on 2017/8/6.
  */
@@ -8,6 +10,7 @@ public class User {
     private String name;
     private String code;
     private Integer age;
+    private List<User> list;
 
     public Integer getId() {
         return id;
@@ -49,5 +52,13 @@ public class User {
                 ", code='" + code + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public List<User> getList() {
+        return list;
+    }
+
+    public void setList(List<User> list) {
+        this.list = list;
     }
 }
