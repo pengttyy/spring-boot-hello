@@ -11,7 +11,7 @@ public class HelloWorld {
 
     @GetMapping("/hello")
     public String say() {
-        return "spring-boot hello";
+        return "spring-boot hello2222";
     }
 
 }
