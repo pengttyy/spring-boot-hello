@@ -61,7 +61,7 @@ public class HelloWorld {
         list.add(user1);
         user.setList(list);
 
-    @GetMapping("/hello")
+    @GetMapping(path="/hello")
     public String say() {
         return "spring-boot hello2222";
     }
