@@ -10,7 +10,7 @@
     <server>
       <id>github</id>
       <username>pengttyy</username>
-      <password>${secrets.token}</password>
+      <password>${{secrets.token}}</password>
     </server>
   </servers>
   <mirrors>
