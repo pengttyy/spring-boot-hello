@@ -61,10 +61,9 @@ public class HelloWorld {
         list.add(user1);
         user.setList(list);
 
-        Result<User> userResult = new Result<>();
-        userResult.setData(user);
-        userResult.setStatus(200);
-        return userResult;
+    @GetMapping(path="/hello")
+    public String say() {
+        return "spring-boot hello2222";
     }
 
 }
